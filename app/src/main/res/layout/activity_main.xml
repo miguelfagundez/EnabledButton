@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Username -->
     <EditText
         android:id="@+id/editTextTop"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <!-- Password -->
     <EditText
         android:id="@+id/editTextBottom"
         android:layout_width="match_parent"
@@ -32,6 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTop"/>
 
+    <!-- Enable/Disable button -->
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"

@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         editTextUsername.addTextChangedListener {username ->
             var text : String? = username?.toString()?.trim()
             text?.let {
+                // Define any condition that you like
                 usernameEnabled = !it.isNullOrEmpty()
                 button.isEnabled = usernameEnabled && passwordEnabled
             }
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         editTextPassword.addTextChangedListener {password ->
             var text : String? = password?.toString()?.trim()
             text?.let {
+                // Define any condition that you like
                 passwordEnabled = !it.isNullOrEmpty()
                 button.isEnabled = usernameEnabled && passwordEnabled
             }
